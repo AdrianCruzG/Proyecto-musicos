@@ -1,22 +1,131 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    background: rgb(50,58,70);
+    background: linear-gradient(90deg, rgba(50,58,70,1) 0%, rgba(89,94,102,1) 50%, rgba(50,58,70,1) 100%);
 }
+
+header{
+    height: 100vh;
+}
+    
+    header div > a{
+        z-index: 20;
+        width: 35% !important;
+    }
+
+
+    header div > figure {
+        display: flex;
+        width: 15%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 5%;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+        header div > figure img{
+            min-width: 100%;
+        }
+
+    header div{
+        height: 100%;
+    }
+
+        header div ol{
+            bottom: 0;
+            top: 1%;
+            margin: 0 5% !important;
+        }
+
+            header div ol li{
+                width: 100% !important;
+                height: 15px !important;
+            }
+
+            header div div div {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+                header div div div img{
+                    height: 100%;
+                }
+
+                header div div div div{
+                    display: flex;
+                    align-content: center;
+                    gap: 39px;
+                }
+
+                    header div div div div h5 {
+                        font-family: 'Montserrat';
+                        font-size: 5em;
+                        margin: 0;
+                        text-shadow: 1px 4px 4px #000;
+                    }
+
+                    header div div div div p {
+                        font-family: 'Open Sans';
+                        font-size: 3.3em;
+                        margin: 0;
+                        text-shadow: 1px 4px 4px #000;
+                    }
+
+section {
+    width: 75%;
+    margin: 20% auto;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+
+    section figure {
+        margin-bottom: 50px;
+    }
+
+    section h2 {
+        font-family: 'Montserrat';
+        font-size: 4em;
+        text-shadow: 7px 2px 8px #000;
+        margin: 15px 0;
+    }
+
+    section p {
+        font-family: 'Open Sans';
+        margin: 0 auto;
+        width: 90%;
+        font-size: 2em;
+        text-shadow: 7px 4px 5px #000;
+    }
+
+        section p a {
+            text-decoration: none;
+            color: #C0E8FF;
+        }
+
+
+    section figure img {
+        border-radius: 25px;
+        box-shadow: 6px 11px 13px rgba(0,0,0,1);
+        width: 100%;
+    }
+
+footer {
+    text-align: center;
+    height: 5vh;
+}
+    
+    footer ol{
+        padding: 0;
+    }
+
+    footer ol a {
+        text-decoration: none;
+        color: #C0E8FF;
+        margin: 0 10px;
+        font-size: 1.5em;
+    }
