@@ -7,4 +7,8 @@
     <RootNamespace>Proyecto_musicos</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\grupos.html" />
+  </ItemGroup>
+
 </Project>
